@@ -1,0 +1,1 @@
+export const PLANE_URL = 'https://raw.githubusercontent.com/ann1511/airplane/master/src/images/airplane.png';
