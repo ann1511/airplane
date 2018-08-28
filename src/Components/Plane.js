@@ -3,13 +3,20 @@ import {Image} from 'react-konva';
 import * as constants from '../constants';
 
 export class Plane extends React.Component {
-    render() {
+    constructor(props) {
+        super(props);
         const plane = new window.Image();
         plane.src = constants.PLANE_URL;
+        this.state = {
+            plane: plane,
+        }
+    }
+    render() {
         return (
-            <Image image = {plane}
+            <Image image = {this.state.plane}
             x = {this.props.x}
-            y = {this.props.y}/>
+            y = {this.props.y}
+        />
         );
     }
 }
