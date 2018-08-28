@@ -16,6 +16,8 @@ export class Plane extends React.Component {
             <Image image = {this.state.plane}
             x = {this.props.x}
             y = {this.props.y}
+            width = {constants.PLANE_WIDTH}
+            height = {constants.PLANE_HEIGHT}
         />
         );
     }
