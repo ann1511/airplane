@@ -9,7 +9,9 @@ export class Patron extends React.Component {
         return (
             <Image image = {patron}
             x = {this.props.x}
-            y = {this.props.y}/>
+            y = {this.props.y}
+            width = {constants.PATRON_WIDTH}
+            height = {constants.PATRON_HEIGHT}/>
         );
     }
 }

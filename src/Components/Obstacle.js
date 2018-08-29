@@ -10,6 +10,7 @@ export class Obstacle extends React.Component {
             <Image image = {obstacle}
             x = {this.props.x}
             y = {this.props.y}
+            isGameOver={this.props.isGameOver}
             width = {constants.OBSTACLE_WIDTH}
             height = {constants.OBSTACLE_HEIGHT}/>
         );
